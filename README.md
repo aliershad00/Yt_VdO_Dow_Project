@@ -67,6 +67,7 @@ python youtube_downloader.py
 - `Single video` — downloads only the supplied URL.
 - `Playlist` — downloads all entries from the URL if it is a playlist.
 - `Format / quality` — selected from dynamically generated options based on available formats.
+- `Subtitles` — choose whether to download subtitles automatically, in English, or download all available subtitles.
 - `Output type`:
   - `mp4`, `mkv`, `webm` — download video and audio, remux or merge as needed
   - `mp3` — extract and convert audio only
