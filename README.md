@@ -29,6 +29,13 @@ This project provides a Tkinter-based desktop application for Windows. It can:
 
 > If `yt-dlp.exe` or `ffmpeg.exe` are missing, the application downloads them automatically.
 
+## Requirements
+
+- Python installed and available on the system PATH
+- `youtube_downloader.py` must be in the current working folder when running
+- `yt-dlp.exe` and `ffmpeg.exe` are recommended to be present in the same folder, but the app can auto-download them if missing
+- A valid YouTube video or playlist URL
+
 ## Running the application
 
 1. Open PowerShell or Command Prompt.
@@ -120,5 +127,26 @@ dist\YouTubeDownloader.exe
 - Existing downloaded output files are shown in the downloaded list panel.
 - The app avoids overwriting files and continues partial downloads when possible.
 
-- run the command cd
-  "c:\Users\alier\Documents\Youtube_Video_Downloader"
+## Run the app step by step
+
+1. Open PowerShell or Command Prompt.
+2. Change directory to the project folder:
+
+```powershell
+cd "c:\Users\alier\Documents\Youtube_Video_Downloader"
+```
+
+3. Start the application:
+
+```powershell
+python youtube_downloader.py
+```
+
+4. Wait for the Tkinter GUI window to open.
+5. Paste a valid YouTube video or playlist URL into the URL field.
+6. Click **Preview metadata** to load available formats and playlist details.
+7. Choose `Single video` or `Playlist`, then select the desired format/quality.
+8. Select an output folder for the downloaded file(s).
+9. Click **Start download**.
+10. Watch the progress log until the download finishes.
+11. Open the chosen output folder to find your downloaded video or audio file.
